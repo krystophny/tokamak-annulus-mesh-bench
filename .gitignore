@@ -1,0 +1,9 @@
+build/
+plots/
+results/
+*.msh
+!cases/*/reference/*.msh
+*.png
+*.pdf
+*.o
+*.mod

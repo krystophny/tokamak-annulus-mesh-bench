@@ -1,0 +1,32 @@
+Third-party components
+======================
+
+This repository vendors no third-party source. Every dependency is fetched by
+CMake at configure time and stays under its own licence.
+
+fortfem (lazy-fortran/fortfem) -- MIT
+    Only the dependency-free triangle_compat mesher is built.
+
+Delaunay32 (morishuz/delaunay32) -- MIT
+    Header/library for constrained Delaunay on quantised integer coordinates.
+
+fortplot (lazy-fortran/fortplot) -- MIT
+    Plotting.
+
+Triangle (J. R. Shewchuk), fetched from salsa.debian.org/science-team/triangle
+    NOT free software and NOT covered by this repository's MIT licence.
+    Its terms permit redistribution only if no compensation is received, and
+    distribution as part of a commercial system requires a direct arrangement
+    with the author. Debian ships it in non-free.
+
+    The Triangle backend is therefore opt-in (-DBENCH_WITH_TRIANGLE=ON) and
+    builds a local copy for comparison only. Do not redistribute the resulting
+    binaries.
+
+The reference meshes under cases/*/reference/ are output data produced by
+Triangle from our own boundary inputs. They are covered by this repository's
+MIT licence; the Triangle source that produced them is not distributed here.
+
+The boundary inputs under cases/*/boundary.dat come from MEPHIT
+(github.com/itpplasma/MEPHIT, MIT) run on the synthetic circular test
+equilibrium shipped with it. They contain no experimental machine data.
