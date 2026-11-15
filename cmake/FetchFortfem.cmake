@@ -1,6 +1,6 @@
 include(FetchContent)
 
-set(FORTFEM_REF "605dc7f056aa9b15cf8e0673eaa13b13ce12a273" CACHE STRING
+set(FORTFEM_REF "9c671f9d087eca454c276fbcafc1f1a88f346856" CACHE STRING
     "fortfem commit to fetch")
 set(FORTFEM_PATH "" CACHE PATH "Local fortfem source (empty = fetch)")
 

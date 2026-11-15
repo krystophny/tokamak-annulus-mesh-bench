@@ -1,6 +1,6 @@
 include(FetchContent)
 
-set(FORTPLOT_REF "178e6fd2f0440d557faf01cc36cd6ec2a2ef5244" CACHE STRING
+set(FORTPLOT_REF "18e6b4442a6f9e083b8965ccf1a8847a6e32b3d9" CACHE STRING
     "fortplot commit to fetch")
 set(FORTPLOT_PATH "" CACHE PATH "Local fortplot source (empty = fetch)")
 
